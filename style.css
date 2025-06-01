@@ -1,0 +1,161 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #71232b;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background-color: #26a2dc;
+  color: white;
+  padding: 5px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #44adef, #f87171);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: white;
+  color: #26acdc;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffe4e6;
+}
+
+/* Footer */
+footer {
+  background-color: #2681dc;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social a {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.footer .social a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  /* Stack columns vertically */
+  .row, .columns {
+    display: block;
+    width: 100%;
+  }
+
+  /* Resize fonts for readability */
+  body, h1, h2, h3, p {
+    font-size: 90%;
+  }
+
+  /* Make navigation vertical */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Ensure images scale with container */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
